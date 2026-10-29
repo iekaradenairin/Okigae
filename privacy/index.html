@@ -5,37 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Okigae Privacy Policy</title>
 <style>
-  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da; }
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da;
+          --card: #f6f8fa; --ok: #1a7f37; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; }
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8;
+            --card: #151b23; --ok: #3fb950; }
   }
   body { margin: 0; background: var(--bg); color: var(--fg);
          font: 16px/1.7 system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Sans", sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.6em; margin: 0 0 4px; }
-  h2 { font-size: 1.15em; margin: 28px 0 8px; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; display: flex; flex-direction: column; }
+  h1 { font-size: 1.6em; margin: 0 0 4px; line-height: 1.3; }
+  h2 { font-size: 1.15em; margin: 32px 0 8px; }
   .date { color: var(--muted); margin: 0 0 20px; }
-  nav { margin: 0 0 24px; }
+  nav { display: flex; gap: 8px; margin: 0 0 24px; }
+  nav a { padding: 4px 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
   a { color: var(--link); }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; width: 100%; }
   ul { padding-left: 1.3em; }
+  li { margin: 6px 0; }
+  .points { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 0 0 8px; }
+  .points p { margin: 0 0 8px; font-weight: 600; }
+  .points ul { list-style: none; padding: 0; margin: 0; }
+  .points li { padding-left: 1.6em; position: relative; }
+  .points li::before { content: "\2713"; position: absolute; left: 0; color: var(--ok); font-weight: 700; }
+  nav { order: -3; }
+  html[data-first="ja"] #ja { order: -2; }
+  html[data-first="ja"] hr { order: -1; }
 </style>
+<script>
+  try {
+    if (/^ja\b/i.test(navigator.language || "")) document.documentElement.setAttribute("data-first", "ja");
+  } catch (e) {}
+</script>
 </head>
 <body>
 <main>
-<nav><a href="#en">English</a> · <a href="#ja">日本語</a></nav>
+<nav><a href="#en" lang="en">English</a><a href="#ja" lang="ja">日本語</a></nav>
 
 <section id="en" lang="en">
 <h1>Okigae privacy policy</h1>
-<p class="date">Last updated: October 28, 2026</p>
+<p class="date">Last updated: October 29, 2026</p>
 
-<p><strong>Summary.</strong> Okigae does not collect, store off your device, or send any personal data. It does not connect to the internet.</p>
+<div class="points">
+  <p>In short</p>
+  <ul>
+    <li>Okigae does not collect any personal data.</li>
+    <li>It does not connect to the internet, and it sends nothing anywhere.</li>
+    <li>Your audio files are read and written only on your PC.</li>
+  </ul>
+</div>
 
 <h2>What the app does on your PC</h2>
 <ul>
   <li>It converts the audio files you choose. The files are read and written only on your PC.</li>
   <li>To open the donut menu while you drag files in File Explorer, it watches the mouse position and buttons and whether the Ctrl or Alt key is held. It does not record, save or send what you type. You can turn this off in Settings ("Enable the donut menu"); the watching then stops.</li>
-  <li>It keeps on your PC: its settings, a history of recent conversions (file paths and results) and log files, in its app data folder. Windows removes them when you uninstall the app.</li>
+  <li>It keeps on your PC: its settings, a history of recent conversions (file paths and results) and log files, in its app data folder. For the Microsoft Store version, Windows removes them when you uninstall the app. For the ZIP version, they are removed when you choose "Uninstall..." in Settings with "Also delete the settings, history and logs" ticked.</li>
   <li>"Export the log" in Settings creates a ZIP file on your desktop only when you press it. The ZIP is not sent anywhere; what you do with it is up to you. Your user name is replaced in it, but the names of converted files and their folders are kept.</li>
 </ul>
 
@@ -57,15 +81,22 @@ Or open an issue: <a href="https://github.com/iekaradenairin/Okigae/issues">http
 
 <section id="ja" lang="ja">
 <h1>Okigae プライバシー ポリシー</h1>
-<p class="date">最終更新日: 2026 年 10 月 28 日</p>
+<p class="date">最終更新日: 2026 年 10 月 29 日</p>
 
-<p><strong>概要.</strong> Okigae は、個人情報を収集せず、端末の外に保存せず、送信もしません。インターネットに接続しません。</p>
+<div class="points">
+  <p>かんたんに言うと</p>
+  <ul>
+    <li>Okigae は、個人情報を集めません。</li>
+    <li>インターネットに接続せず、どこにも何も送りません。</li>
+    <li>音声ファイルの読み書きは、あなたの PC の中だけで行います。</li>
+  </ul>
+</div>
 
 <h2>アプリが PC の中で行うこと</h2>
 <ul>
   <li>選んだ音声ファイルを変換します。ファイルの読み書きは PC の中だけで行います。</li>
   <li>エクスプローラーでファイルをドラッグしているときにドーナツ メニューを開くため、マウスの位置とボタン、Ctrl キーまたは Alt キーが押されているかを見ます。入力した文字は記録・保存・送信しません。設定（「ドーナツを有効にする」）でオフにでき、オフにすると監視も止まります。</li>
-  <li>PC のアプリのデータ フォルダーに、設定、最近の変換の履歴（ファイルのパスと結果）、ログを保存します。アプリをアンインストールすると、Windows がこれらを削除します。</li>
+  <li>PC のアプリのデータ フォルダーに、設定、最近の変換の履歴（ファイルのパスと結果）、ログを保存します。Microsoft Store 版は、アプリをアンインストールすると Windows がこれらを削除します。ZIP 版は、設定の「アンインストール…」で「設定・履歴・ログも消す」にチェックを入れて実行すると削除されます。</li>
   <li>設定の「ログを書き出す」は、押したときだけデスクトップに ZIP ファイルを作ります。ZIP はどこにも送られません。どう扱うかは利用者が決めます。ZIP の中では Windows のユーザー名を置き換えますが、変換したファイルとフォルダーの名前は残ります。</li>
 </ul>
 
