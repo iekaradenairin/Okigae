@@ -43,6 +43,7 @@ Okigae（おきがえ）は、WAV / MP3 をかんたんに変換する Windows �
 | 版 | 入手先 | 特徴 |
 |---|---|---|
 | **ZIP 版**（今すぐ使えます） | [最新版をダウンロード](https://github.com/iekaradenairin/Okigae/releases/latest)（`Okigae-1.0.0-win-x64.zip`） | インストール不要。展開して起動するだけ。新しい版が出ても自動では更新されません |
+| **ZIP 版（BOOTH）** | [BOOTH で無料ダウンロード](https://iekaradenai.booth.pm/items/9063918) | 上と同じ ZIP です。BOOTH のアカウントで入手したい方向け |
 | **Microsoft Store 版** | 準備中 | Store から入れると自動で更新されます。公開したら、ここにリンクを載せます |
 
 動作環境: Windows 10 / 11（64 bit）
@@ -164,6 +165,7 @@ In File Explorer, **hold Ctrl and drag** your files: a menu (the "donut") appear
 | Version | Where | Notes |
 |---|---|---|
 | **ZIP version** (available now) | [Download the latest release](https://github.com/iekaradenairin/Okigae/releases/latest) (`Okigae-1.0.0-win-x64.zip`) | No installation: extract and run. It does not update itself |
+| **ZIP version (BOOTH)** | [Free download on BOOTH](https://iekaradenai.booth.pm/items/9063918) | The same ZIP as above, for those who prefer to get it through BOOTH |
 | **Microsoft Store version** | Coming soon | Updates automatically through the Store. The link will be added here once it is published |
 
 Requires Windows 10 / 11 (64-bit).
