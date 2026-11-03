@@ -4,7 +4,7 @@
 
 ![Okigae のドーナツ メニューで WAV を変換しているところ](docs/images/demo.gif)
 
-Okigae（おきがえ）は、WAV / MP3 をかんたんに変換する Windows 用のアプリです。
+Okigae（おきがえ）は WAV / MP3 をかんたんに変換する Windows 用のアプリです。
 エクスプローラーでファイルを **Ctrl を押しながらドラッグ** すると、カーソルのまわりにメニュー（ドーナツ）が出ます。やりたい変換の上で指を離すだけで、変換されたファイルが同じフォルダーにできます。
 
 - 元のファイルは書き換えません。結果は別の名前で保存します。
@@ -42,9 +42,9 @@ Okigae（おきがえ）は、WAV / MP3 をかんたんに変換する Windows �
 
 | 版 | 入手先 | 特徴 |
 |---|---|---|
-| **ZIP 版**（今すぐ使えます） | [最新版をダウンロード](https://github.com/iekaradenairin/Okigae/releases/latest)（`Okigae-1.0.0-win-x64.zip`） | インストール不要。展開して起動するだけ。新しい版が出ても自動では更新されません |
-| **ZIP 版（BOOTH）** | [BOOTH で無料ダウンロード](https://iekaradenai.booth.pm/items/9063918) | 上と同じ ZIP です。BOOTH のアカウントで入手したい方向け |
-| **Microsoft Store 版** | 準備中 | Store から入れると自動で更新されます。公開したら、ここにリンクを載せます |
+| ZIP 版（今すぐ使えます） | [最新版をダウンロード](https://github.com/iekaradenairin/Okigae/releases/latest)（`Okigae-1.0.2-win-x64.zip`） | インストール不要。展開して起動するだけ。新しい版が出ても自動では更新されません |
+| ZIP 版（BOOTH） | [BOOTH で無料ダウンロード](https://iekaradenai.booth.pm/items/9063918) | 上と同じ ZIP です。BOOTH のアカウントで入手したい方向け |
+| Microsoft Store 版 | [Microsoft Store で入手](https://apps.microsoft.com/detail/9p4390q6hzmr) | Store から入れると自動で更新されます |
 
 動作環境: Windows 10 / 11（64 bit）
 
@@ -52,7 +52,7 @@ Okigae（おきがえ）は、WAV / MP3 をかんたんに変換する Windows �
 
 ZIP 版の手順です。
 
-1. 上のリンクから `Okigae-1.0.0-win-x64.zip` をダウンロードします。
+1. 上のリンクから `Okigae-1.0.2-win-x64.zip` をダウンロードします。
 2. ZIP を右クリック →「プロパティ」を開きます。下のほうに「許可する」というチェックボックスがあれば、チェックを入れて「OK」を押します（無ければそのままで大丈夫です）。
 3. ZIP を右クリック →「すべて展開」を選びます。展開先は「ドキュメント」など、好きな場所でかまいません。
 4. できた「Okigae」フォルダーを開いて、`Okigae.exe` をダブルクリックします。
@@ -70,16 +70,16 @@ Okigae が起動していれば（タスクトレイにアイコンがあれば�
 ### 1. ドーナツ メニュー（おすすめ）
 
 1. エクスプローラーで、WAV / MP3 ファイルを選びます（複数でも OK）。
-2. **Ctrl キーを押しながら** ファイルをドラッグします。
+2. Ctrl キーを押しながらファイルをドラッグします。
 3. カーソルのまわりにドーナツが出るので、やりたい変換の上でマウスのボタンを離します。
 
 - ドーナツの真ん中には、ファイルの形式（例: WAV / ステレオ / 44.1kHz/16bit）が出ます。
-- 各項目の「対象 1/1」は、選んだファイルのうちその変換ができる数です。変換できないもの（たとえば、もうモノラルのファイルに「ステレオ → モノ」）は灰色になって選べません。
+- 各項目の「対象 1/1」は、選んだファイルのうちその変換ができる数です。変換できない項目（たとえば、もうモノラルのファイルに「ステレオ → モノ」）は灰色になって選べません。
 - Ctrl の代わりに Alt を使うように、設定で変えられます。
 
 ### 2. 右クリックの「送る」
 
-ファイルを右クリック →「送る」→「Okigae - …」から、やりたい変換を選びます（Windows 11 では、右クリックのあと「その他のオプションを確認」の中にあります）。
+ファイルを右クリック →「送る」→「Okigae - …」から、やりたい変換を選びます（Windows 11 では、「送る」は右クリックのあと「その他のオプションを確認」の中にあります）。
 
 ![右クリックの「送る」に並ぶ Okigae の項目](docs/images/sendto-ja.png)
 
@@ -111,7 +111,7 @@ Okigae のウィンドウ（タスクトレイのアイコンから開けます�
 
 ## アンインストール
 
-ZIP 版は、フォルダーを消す前に、次の手順でアンインストールしてください（先にフォルダーを消すと、「送る」の項目が残ってしまいます）。
+ZIP 版はフォルダーを消す前に、次の手順でアンインストールしてください（先にフォルダーを消すと、「送る」の項目が残ってしまいます）。
 
 1. Okigae のウィンドウで「設定」を開き、左下の「アンインストール…」を押します。
 2. 「設定・履歴・ログも消す」にチェックが入っていることを確かめて、「アンインストール」を押します。「送る」の項目と、Windows の起動時に開始する設定も消えます。
@@ -164,9 +164,9 @@ In File Explorer, **hold Ctrl and drag** your files: a menu (the "donut") appear
 
 | Version | Where | Notes |
 |---|---|---|
-| **ZIP version** (available now) | [Download the latest release](https://github.com/iekaradenairin/Okigae/releases/latest) (`Okigae-1.0.0-win-x64.zip`) | No installation: extract and run. It does not update itself |
+| **ZIP version** (available now) | [Download the latest release](https://github.com/iekaradenairin/Okigae/releases/latest) (`Okigae-1.0.2-win-x64.zip`) | No installation: extract and run. It does not update itself |
 | **ZIP version (BOOTH)** | [Free download on BOOTH](https://iekaradenai.booth.pm/items/9063918) | The same ZIP as above, for those who prefer to get it through BOOTH |
-| **Microsoft Store version** | Coming soon | Updates automatically through the Store. The link will be added here once it is published |
+| **Microsoft Store version** | [Get it from the Microsoft Store](https://apps.microsoft.com/detail/9p4390q6hzmr) | Updates automatically through the Store |
 
 Requires Windows 10 / 11 (64-bit).
 
@@ -174,7 +174,7 @@ Requires Windows 10 / 11 (64-bit).
 
 These steps are for the ZIP version.
 
-1. Download `Okigae-1.0.0-win-x64.zip` from the link above.
+1. Download `Okigae-1.0.2-win-x64.zip` from the link above.
 2. Right-click the ZIP and open "Properties". If there is an "Unblock" checkbox near the bottom, tick it and press "OK" (if not, that is fine).
 3. Right-click the ZIP and choose "Extract All". You can extract it anywhere, for example to Documents.
 4. Open the "Okigae" folder that was created and double-click `Okigae.exe`.
